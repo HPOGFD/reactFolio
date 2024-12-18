@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# Debugger configurations
+.vscode/
+
+# Build output
+dist/
+build/
+
+# Dependency directories
+.cache/
+
+# Environment files
+.env
+
+# OS files
+.DS_Store  # macOS
+Thumbs.db  # Windows
