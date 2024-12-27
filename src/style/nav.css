@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  .nav-item {
+    margin: 0 1rem;
+  }
+  
+  .nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item a:hover {
+    color: #f39c12; /* or any other hover color you prefer */
+  }
+  
