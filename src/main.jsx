@@ -1,6 +1,8 @@
 
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+
 import ReactDOM from 'react-dom/client';
 import App from './app';
 
@@ -20,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path: 'Projects',
                 element: <Projects />
+            },
+            {
+                path: 'Contact',
+                element: <Contact />
             }
 ]
 }
