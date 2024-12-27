@@ -1,0 +1,23 @@
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .header-title h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .header-title .tagline {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #ddd;
+  }
+  
+  /* Nav Styling within Header */
+  .header nav {
+    margin-top: 1rem;
+  }
+  

@@ -2,12 +2,13 @@ import Nav from './components/NavTabs';
 import Footer from './components/Footer';
 import Form from './router/Form';
 import { Outlet } from 'react-router-dom';
+import Header from './components/Header';
 
 function App() {
   console.log('App.js is running');
     return (
         <>
-            <Nav />
+            <Header />
             <main>
             <Outlet />
             </main>
