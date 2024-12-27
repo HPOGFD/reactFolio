@@ -1,5 +1,6 @@
 
 import About from './pages/About';
+import Projects from './pages/Projects';
 import ReactDOM from 'react-dom/client';
 import App from './app';
 
@@ -15,7 +16,11 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <About />
-    }
+            },
+            {
+                path: 'Projects',
+                element: <Projects />
+            }
 ]
 }
 ]);

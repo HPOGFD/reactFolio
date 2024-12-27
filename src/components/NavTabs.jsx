@@ -7,6 +7,9 @@ function NavTabs() {
             <li>
                 <Link to="/">About</Link>
             </li>
+            <li>
+                <Link to="/Projects">Projects</Link>
+            </li>
         </ul>
     )
 }
