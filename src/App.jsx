@@ -1,4 +1,5 @@
 import Nav from './components/NavTabs';
+import Footer from './components/Footer';
 import { Outlet } from 'react-router-dom';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
             <main>
             <Outlet />
             </main>
-            
+            <Footer />
         </>
     );
 }
