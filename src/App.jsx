@@ -1,5 +1,6 @@
 import Nav from './components/NavTabs';
 import Footer from './components/Footer';
+import Form from './router/Form';
 import { Outlet } from 'react-router-dom';
 
 function App() {
