@@ -13,6 +13,9 @@ function NavTabs() {
             <li>
                 <Link to="/Contact">Contact</Link>
             </li>
+            <li>
+                <Link to="/Resume">Resume</Link>
+            </li>
         </ul>
     )
 }

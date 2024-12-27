@@ -2,7 +2,7 @@
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-
+import Resume from './pages/Resume';
 import ReactDOM from 'react-dom/client';
 import App from './app';
 
@@ -26,6 +26,10 @@ const router = createBrowserRouter([
             {
                 path: 'Contact',
                 element: <Contact />
+            },
+            {
+                path: 'resume',
+                element: <Resume />
             }
 ]
 }
