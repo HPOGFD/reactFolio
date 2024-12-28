@@ -6,31 +6,31 @@ export default function Projects() {
     return (
         <div id="projects">
         <div class="container">
-          <h1 class="sub-title">My Projects</h1>
+         
           <div class="project-list">
             <div class="project-item">
-              <i></i>
-              <h2>Budget Web Application</h2>
-              <p>User-friendly application designed to help individuals manage their finances efficiently.</p>
-              <a href="https://github.com/HPOpersonalProjects/BudgetApp.git">Learn More</a>
+              <img src='../images/weather.gif' className='project-gif'/>
+              <h2>sunChaser</h2>
+              <p>User-friendly application designed to help individuals be on top of the weather efficiently.</p>
+              <a href="https://github.com/HPOGFD/sunChaser.git">Learn More</a>
             </div>
             <div class="project-item">
-              <i></i>
-              <h2>Shopping Web Application</h2>
-              <p>It allows users to browse products, view detailed descriptions, add items to their cart, and securely complete purchases.</p>
-              <a href="https://github.com/HPOpersonalProjects/ShoppingApp.git">Learn More</a>
+            <img src='../images/weather.gif' className='project-gif'/>
+              <h2>teamDepo</h2>
+              <p>A command-line application for managing employee data. It allows you to view and manage departments, roles, and employees, including adding new records and updating employee roles.</p>
+              <a href="https://github.com/HPOGFD/teamDepo.git">Learn More</a>
             </div>
             <div class="project-item">
-              <i></i>
-              <h2>Shopping Web Application</h2>
-              <p>It allows users to browse products, view detailed descriptions, add items to their cart, and securely complete purchases.</p>
-              <a href="https://github.com/HPOpersonalProjects/ShoppingApp.git">Learn More</a>
+            <img src='../images/whip.gif' className='project-gif'/>
+              <h2>whipBuilder</h2>
+              <p>A modular OOP project that allows users to build and customize vehicles by selecting components like color, wheels, towing capacity</p>
+              <a href="https://github.com/HPOGFD/whipBuilder.git">Learn More</a>
             </div>
             <div class="project-item">
-              <i></i>
-              <h2>Bored API</h2>
-              <p>Fun, interactive tool that suggests activities to help users combat boredom.</p>
-              <a href="https://github.com/HPOGFD/BoredAPI.git">Learn More</a>
+                <img src='../images/weather.gif' className='project-gif'/>
+              <h2>budgetApp</h2>
+              <p>Easy form to input salary and expenses with easy to use calculator</p>
+              <a href="https://github.com/HPOGFD/BudgetApp.git">Learn More</a>
               
             </div>
           </div>
