@@ -3,7 +3,6 @@
     display: flex; /* Flexbox for horizontal layout */
     justify-content: center; /* Center align the content */
     padding: 2rem; /* Add spacing around the section */
-    background-color: #000; /* Black background */
     color: #fff; /* White text color */
   }
   
