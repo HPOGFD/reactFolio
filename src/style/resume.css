@@ -1,54 +1,94 @@
+
+/* Container Styles */
 .resume-container {
-    padding: 2rem;
-    font-family: Arial, sans-serif;
-    max-width: 900px;
-    margin: 0 auto;
-    line-height: 1.6;
-    color: #333;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(220, 220, 220, 1); /* Soft light gray for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header Styles */
+.resume-header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333333; /* Dark gray for a softer look */
+  text-transform: uppercase;
+}
+
+/* Section Styles */
+.resume-section {
+  margin-bottom: 30px;
+}
+
+.resume-section h2 {
+  font-size: 1.8rem;
+  color: #333333; /* Dark gray for section headings */
+  border-bottom: 2px solid #cccccc; /* Subtle light gray underline */
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.resume-section p, 
+.resume-section li {
+  line-height: 1.8;
+  color: #444444; /* Medium gray for readability */
+}
+
+/* Professional Experience Styles */
+.experience-item h3 {
+  font-size: 1.5rem;
+  color: #000000; /* Black for job titles */
+  margin-bottom: 5px;
+}
+
+.experience-item p {
+  font-style: italic;
+  color: #666666; /* Subtle gray for company and dates */
+  margin-bottom: 10px;
+}
+
+.experience-item ul {
+  margin-left: 20px;
+}
+
+.experience-item li {
+  margin-bottom: 10px;
+}
+
+/* Education & Certification Styles */
+ul {
+  list-style: disc;
+  padding-left: 40px;
+}
+
+ul li p {
+  margin: 5px 0 10px;
+  color: #444444; /* Medium gray for better readability */
+}
+
+/* Key Projects Styles */
+.resume-section ul li strong {
+  color: #333333; /* Darker text for project names */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 15px;
   }
-  
+
   .resume-header {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 2.5rem;
-    color: #444;
+    font-size: 2rem;
   }
-  
-  .resume-section {
-    margin-bottom: 2rem;
-  }
-  
+
   .resume-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    color: #222;
-  }
-  
-  .experience-item {
-    margin-bottom: 1.5rem;
-  }
-  
-  .experience-item h3 {
     font-size: 1.5rem;
-    margin-bottom: 0.25rem;
-    color: #555;
   }
-  
-  .experience-item p {
-    font-style: italic;
-    color: #777;
+
+  .experience-item h3 {
+    font-size: 1.2rem;
   }
-  
-  ul {
-    list-style-type: disc;
-    margin: 0.5rem 0 0.5rem 1.5rem;
-  }
-  
-  ul li {
-    margin-bottom: 0.5rem;
-  }
-  
-  strong {
-    color: #111;
-  }
-  
+}
