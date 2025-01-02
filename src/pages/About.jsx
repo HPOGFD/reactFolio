@@ -7,16 +7,13 @@ export default function About() {
             <div id="aboutMe">
            
             <img src="images/IMG_2973.JPG"></img>
-            <p> About me <br></br>
-            Hey there! 👋 I'm Harry P. Oyarvide, an enthusiastic sales application engineer on an exciting journey into the tech world. 
-            I'm particularly passionate about back-end development and cloud computing with AWS. My background in electrical engineering, 
-            combined with my growing expertise in JavaScript, Node, SQL, REACT gives me a unique perspective on problem-solving and innovation.
-            What drives me? The thrill of crafting elegant solutions and the endless possibilities in tech. When I'm not coding or learning new technologies, 
-            you'll find me hiking trails with my family and our adventurous dog, Xena. 🏃‍♂️🐕 F1 fanatic...love fast cars.
-            I'm on a mission to combine my engineering mindset with cutting-edge tech skills to create impactful solutions. 
-            Every day, I'm taking steps toward my goal of becoming a skilled full-stack developer, fueled by curiosity and a commitment to continuous learning. 
-            Let's build something amazing together! 🚀
+            <p>
+            Hi there! 👋 I'm Harry P. Oyarvide, a sales application engineer with a passion for back-end development and AWS cloud computing. 
+            My background in electrical engineering, combined with growing skills in JavaScript, Node, SQL, and React, fuels my love for problem-solving. 
+            Outside of tech, I enjoy hiking with my family and our dog, Xena, and I'm a huge F1 enthusiast. 🏎️ I'm on a mission to merge my 
+            engineering mindset with cutting-edge tech to create impactful solutions. Let's collaborate and build something amazing! 🚀
             </p>
+            
         </div>
             </div>
          
