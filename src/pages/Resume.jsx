@@ -5,7 +5,7 @@ const Resume = () => {
     return (
       <div className="resume-container">
         <h1 className="resume-header">Resume</h1>
-  
+        <a href="https://drive.google.com/file/d/1vmtDIfVg8C-GZWOFfc2OUtevlbHAQQnR/view?usp=sharing">Download Resume</a>
         {/* Professional Summary */}
         <section className="resume-section">
           <h2>Professional Summary</h2>
@@ -37,7 +37,7 @@ const Resume = () => {
               <li>Exceeded annual sales targets through multi-million-dollar deal closures and strategic client management.</li>
               <li>Partnered with product managers for new product development and platform integrations.</li>
               <li>Delivered technical leadership to cross-functional teams, enhancing product knowledge and sales strategies.</li>
-              <li>Optimized customer self-service features by improving platform capabilities.</li>
+              <li>Delivered exceptional customer service by addressing needs, resolving issues promptly, and exceeding satisfaction expectations.</li>
             </ul>
           </div>
   
