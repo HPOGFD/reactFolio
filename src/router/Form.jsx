@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import '../style/Form.css';
 
 function Form() {
@@ -43,7 +43,6 @@ function Form() {
   <h1>Contact Me</h1>
   <div className="form-wrapper">
     <div className="form-details">
-      <p><b>Address:</b> 335 Aspetuck Ridge Road, New Milford, CT 06776</p>
       <p><b>Telephone:</b> (914)5846063</p>
       <p><b>Email:</b> poyarvide87@yahoo.com</p>
     </div>
