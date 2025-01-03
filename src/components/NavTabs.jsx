@@ -10,7 +10,7 @@ const NavTabs = () => {
                 <Link to="/">About</Link>
             </li>
             <li className="nav-item">
-                <Link to="/Projects">Projects</Link>
+                <Link to="/Projects">Portfolio</Link>
             </li>
             <li className="nav-item">
                 <Link to="/Contact">Contact</Link>

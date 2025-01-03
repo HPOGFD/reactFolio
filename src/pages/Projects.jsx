@@ -16,7 +16,7 @@ export default function Projects() {
               <a href="https://github.com/HPOGFD/sunChaser.git">Learn More</a>
             </div>
             <div className="project-item">
-            <img src='../images/weather.gif' className='project-gif'/>
+            <img src='../images/team.gif' className='project-gif'/>
               <h2>teamDepo</h2>
               <p>A command-line application for managing employee data. It allows you to view and manage departments, roles, and employees, including adding new records and updating employee roles.</p>
               <a href="https://github.com/HPOGFD/teamDepo.git">Learn More</a>
@@ -28,7 +28,7 @@ export default function Projects() {
               <a href="https://github.com/HPOGFD/whipBuilder.git">Learn More</a>
             </div>
             <div className="project-item">
-                <img src='../images/weather.gif' className='project-gif'/>
+                <img src='../images/budget.gif' className='project-gif'/>
               <h2>budgetApp</h2>
               <p>Easy form to input salary and expenses with easy to use calculator</p>
               <a href="https://github.com/HPOGFD/BudgetApp.git">Learn More</a>
