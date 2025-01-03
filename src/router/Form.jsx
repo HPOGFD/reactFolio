@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../style/Form.css';
+import '../style/form.css';
 
 function Form() {
   // State variables for name, email, subject, and message
