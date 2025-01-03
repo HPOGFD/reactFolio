@@ -6,7 +6,7 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import ReactDOM from 'react-dom/client';
-import App from './app';
+import App from './App';
 import './style/index.css';
 
 import {createBrowserRouter, RouterProvider } from 'react-router-dom';
