@@ -25,6 +25,7 @@ Welcome to my personal portfolio! 🎉 This is where you can explore my skills, 
 ![Portfolio Preview](./images/preview.png)  
 *Above: A sneak peek at the portfolio!*
 
+link to page https://hporeactfolio.netlify.app/
 ---
 
 ## 📈 Future Improvements
