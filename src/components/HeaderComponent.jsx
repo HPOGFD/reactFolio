@@ -1,6 +1,6 @@
 import React from 'react';
-import Nav from './NavTabs'; // Import the navigation component
-import '../style/header.css';
+import Nav from './NavComponent'; // Import the navigation component
+
 
 function Header() {
   return (
