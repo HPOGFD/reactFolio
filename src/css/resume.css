@@ -1,0 +1,72 @@
+/* src/styles/resume.css */
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #f4f4f4;
+  }
+  
+  .resume-card {
+    max-width: 800px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .resume-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .resume-button {
+    background: red;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .resume-button:hover {
+    background: darkred;
+  }
+  
+  .resume-section {
+    margin-bottom: 20px;
+  }
+  
+  .resume-section h2 {
+    font-size: 22px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    color: #444;
+  }
+  
+  .resume-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .resume-section ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .resume-section ul li strong {
+    color: #222;
+  }
+  
