@@ -1,6 +1,5 @@
-// src/components/Form.jsx
 import React, { useState } from 'react';
-import { Card, Form as BootstrapForm, Button, Row, Col } from 'react-bootstrap';
+import '../css/form.css';
 
 function Form() {
   const [name, setName] = useState('');
@@ -26,81 +25,57 @@ function Form() {
   };
 
   return (
-    <Card className="bg-dark text-white border-danger">
-      <Card.Body>
-        <h1 className="text-danger mb-4">Contact Me</h1>
-        <Row>
-          {/* Contact Details */}
-          <Col md={4} className="mb-4">
-            <Card className="bg-dark text-white border-danger">
-              <Card.Body>
-                <h4 className="text-danger">Get in Touch</h4>
-                <p><strong>Telephone:</strong> (914) 584-6063</p>
-                <p><strong>Email:</strong> poyarvide87@yahoo.com</p>
-              </Card.Body>
-            </Card>
-          </Col>
+    <div className="form-container">
+      <h1 className="form-title">Contact Me</h1>
 
-          {/* Form */}
-          <Col md={8}>
-            <BootstrapForm onSubmit={handleFormSubmit}>
-              <BootstrapForm.Group className="mb-3">
-                <BootstrapForm.Control
-                  value={name}
-                  name="name"
-                  onChange={handleInputChange}
-                  type="text"
-                  placeholder="Your Name"
-                  required
-                  className="bg-dark text-white border-danger"
-                />
-              </BootstrapForm.Group>
+      {/* Contact Details */}
+      <div className="contact-details">
+        <h4>Get in Touch</h4>
+        <p><strong>Telephone:</strong> (914) 584-6063</p>
+        <p><strong>Email:</strong> poyarvide87@yahoo.com</p>
+      </div>
 
-              <BootstrapForm.Group className="mb-3">
-                <BootstrapForm.Control
-                  value={email}
-                  name="email"
-                  onChange={handleInputChange}
-                  type="email"
-                  placeholder="Your Email Address"
-                  required
-                  className="bg-dark text-white border-danger"
-                />
-              </BootstrapForm.Group>
+      {/* Form */}
+      <form className="contact-form" onSubmit={handleFormSubmit}>
+        <input
+          value={name}
+          name="name"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Your Name"
+          required
+        />
 
-              <BootstrapForm.Group className="mb-3">
-                <BootstrapForm.Control
-                  value={subject}
-                  name="subject"
-                  onChange={handleInputChange}
-                  type="text"
-                  placeholder="Subject"
-                  required
-                  className="bg-dark text-white border-danger"
-                />
-              </BootstrapForm.Group>
+        <input
+          value={email}
+          name="email"
+          onChange={handleInputChange}
+          type="email"
+          placeholder="Your Email Address"
+          required
+        />
 
-              <BootstrapForm.Group className="mb-3">
-                <BootstrapForm.Control
-                  as="textarea"
-                  rows={5}
-                  value={message}
-                  name="message"
-                  onChange={handleInputChange}
-                  placeholder="Type your message here..."
-                  required
-                  className="bg-dark text-white border-danger"
-                />
-              </BootstrapForm.Group>
+        <input
+          value={subject}
+          name="subject"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Subject"
+          required
+        />
 
-              <Button variant="danger" type="submit">
-                Send!
-              </Button>
-            </BootstrapForm>
-          </Col>
-        </Row>
-      </Card.Body>
-    </Card>
+        <textarea
+          rows={5}
+          value={message}
+          name="message"
+          onChange={handleInputChange}
+          placeholder="Type your message here..."
+          required
+        />
+
+        <button type="submit">Send!</button>
+      </form>
+    </div>
   );
 }
 

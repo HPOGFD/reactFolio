@@ -1,104 +1,92 @@
-// src/pages/Projects.jsx
-import React from 'react';
-import { Container, Card, Row, Col, Button } from 'react-bootstrap';
+import React from "react";
+import "../css/projects.css";
+
+const projects = [
+  {
+    title: "sunChaser",
+    description:
+      "User-friendly application designed to help individuals stay on top of the weather efficiently.",
+    image: "/images/Jobs.gif",
+    link: "https://github.com/HPOGFD/sunChaser.git",
+    featured: true,
+    techStack: ["React", "OpenWeather API", "CSS"],
+  },
+  {
+    title: "teamDepo",
+    description:
+      "A command-line application for managing employee data, including departments, roles, and employees.",
+    image: "/images/Jobs.gif",
+    link: "https://github.com/HPOGFD/teamDepo.git",
+    featured: false,
+    techStack: ["Node.js", "Inquirer", "MySQL"],
+  },
+  {
+    title: "whipBuilder",
+    description:
+      "A modular OOP project for building and customizing vehicles with components like color and wheels.",
+    image: "/images/Jobs.gif",
+    link: "https://github.com/HPOGFD/whipBuilder.git",
+    featured: false,
+    techStack: ["JavaScript", "OOP", "ES6 Classes"],
+  },
+  {
+    title: "budgetApp",
+    description:
+      "Easy form to input salary and expenses with a user-friendly calculator.",
+    image: "/images/Jobs.gif",
+    link: "https://github.com/HPOGFD/BudgetApp.git",
+    featured: false,
+    techStack: ["HTML", "CSS", "JavaScript"],
+  },
+];
 
 export default function Projects() {
-  console.log('Projects.jsx is running'); // Updated log for clarity
+  const featuredProject = projects.find((project) => project.featured);
+  const otherProjects = projects.filter((project) => !project.featured);
 
   return (
-    <Container className="py-5">
-      <Card className="bg-dark text-white border-danger mb-5">
-        <Card.Header className="bg-danger text-white">
-          <h2 className="mb-0">My Projects</h2>
-        </Card.Header>
-        <Card.Body>
-          <p className="lead">
-            Check out some of the projects I’ve built—showcasing my skills in development and problem-solving!
-          </p>
-        </Card.Body>
-      </Card>
+    <div className="projects-container">
+      {/* Header */}
+      <div className="projects-header">
+        <h2>My Projects</h2>
+        <p>Check out some of the projects I’ve built—showcasing my skills in development and problem-solving!</p>
+      </div>
 
-      <Row xs={1} md={2} className="g-4">
-        {/* Project 1: sunChaser */}
-        <Col>
-          <Card className="bg-dark text-white border-danger h-100">
-            <Card.Img variant="top" src="../images/weather.gif" alt="sunChaser demo" />
-            <Card.Body>
-              <Card.Title className="text-danger">sunChaser</Card.Title>
-              <Card.Text>
-                User-friendly application designed to help individuals stay on top of the weather efficiently.
-              </Card.Text>
-              <Button
-                variant="danger"
-                href="https://github.com/HPOGFD/sunChaser.git"
-                target="_blank"
-              >
-                Learn More
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
+      {/* Featured Project */}
+      {featuredProject && (
+        <div className="project-card featured">
+          <img src={featuredProject.image} alt={featuredProject.title} className="project-image" />
+          <h3 className="project-title">{featuredProject.title} (⭐ Featured)</h3>
+          <p className="project-description">{featuredProject.description}</p>
+          <div className="project-tech-stack">
+            {featuredProject.techStack.map((tech, index) => (
+              <span key={index} className="tech-badge">{tech}</span>
+            ))}
+          </div>
+          <a href={featuredProject.link} target="_blank" rel="noopener noreferrer" className="project-button">
+            Learn More
+          </a>
+        </div>
+      )}
 
-        {/* Project 2: teamDepo */}
-        <Col>
-          <Card className="bg-dark text-white border-danger h-100">
-            <Card.Img variant="top" src="../images/team.gif" alt="teamDepo demo" />
-            <Card.Body>
-              <Card.Title className="text-danger">teamDepo</Card.Title>
-              <Card.Text>
-                A command-line application for managing employee data, including departments, roles, and employees.
-              </Card.Text>
-              <Button
-                variant="danger"
-                href="https://github.com/HPOGFD/teamDepo.git"
-                target="_blank"
-              >
-                Learn More
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        {/* Project 3: whipBuilder */}
-        <Col>
-          <Card className="bg-dark text-white border-danger h-100">
-            <Card.Img variant="top" src="../images/whip.gif" alt="whipBuilder demo" />
-            <Card.Body>
-              <Card.Title className="text-danger">whipBuilder</Card.Title>
-              <Card.Text>
-                A modular OOP project for building and customizing vehicles with components like color and wheels.
-              </Card.Text>
-              <Button
-                variant="danger"
-                href="https://github.com/HPOGFD/whipBuilder.git"
-                target="_blank"
-              >
-                Learn More
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        {/* Project 4: budgetApp */}
-        <Col>
-          <Card className="bg-dark text-white border-danger h-100">
-            <Card.Img variant="top" src="../images/budget.gif" alt="budgetApp demo" />
-            <Card.Body>
-              <Card.Title className="text-danger">budgetApp</Card.Title>
-              <Card.Text>
-                Easy form to input salary and expenses with a user-friendly calculator.
-              </Card.Text>
-              <Button
-                variant="danger"
-                href="https://github.com/HPOGFD/BudgetApp.git"
-                target="_blank"
-              >
-                Learn More
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+      {/* Other Projects */}
+      <div className="projects-grid">
+        {otherProjects.map((project, index) => (
+          <div key={index} className="project-card">
+            <img src={project.image} alt={project.title} className="project-image" />
+            <h3 className="project-title">{project.title}</h3>
+            <p className="project-description">{project.description}</p>
+            <div className="project-tech-stack">
+              {project.techStack.map((tech, idx) => (
+                <span key={idx} className="tech-badge">{tech}</span>
+              ))}
+            </div>
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-button">
+              Learn More
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
