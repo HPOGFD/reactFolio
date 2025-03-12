@@ -1,100 +1,122 @@
 /* src/styles/projects.css */
 
 .projects-container {
-    padding: 40px;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .projects-header {
-    background: #333;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-header {
+  background: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.projects-header h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.project-card {
+  background: #222;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.featured {
+  border: 2px solid gold;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.project-title {
+  font-size: 22px;
+  color: #f4f4f4;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  color: #ccc;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tech-badge {
+  background: #555;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.project-button {
+  background: red;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.project-button:hover {
+  background: darkred;
+}
+.learn-more {
+    background-color: blue;
     color: white;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 20px;
-  }
-  
-  .projects-header h2 {
-    margin: 0;
-    font-size: 28px;
-  }
-  
-  .project-card {
-    background: #222;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 800px;
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .featured {
-    border: 2px solid gold;
-  }
-  
-  .project-image {
-    width: 100%;
-    border-radius: 8px;
-    max-height: 300px;
-    object-fit: contain;
-  }
-  
-  .project-title {
-    font-size: 22px;
-    color: #f4f4f4;
-    margin-bottom: 10px;
-  }
-  
-  .project-description {
-    color: #ccc;
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-  
-  .project-tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
-  }
-  
-  .tech-badge {
-    background: #555;
-    color: white;
-    padding: 5px 10px;
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
-    font-size: 14px;
-  }
-  
-  .project-button {
-    background: red;
-    color: white;
     text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
     display: inline-block;
-    margin-top: 10px;
+  }
+  
+  .live-demo {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
   }
   
   .project-button:hover {
-    background: darkred;
+    opacity: 0.8;
   }
   
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    width: 100%;
-    max-width: 1000px;
-  }
-  
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+}

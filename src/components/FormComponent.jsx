@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import '../css/form.css';
 
 function Form() {
@@ -6,6 +7,7 @@ function Form() {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [isSending, setIsSending] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -17,11 +19,34 @@ function Form() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    alert(`Message Sent by ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`);
-    setName('');
-    setEmail('');
-    setSubject('');
-    setMessage('');
+
+    // Show loading state
+    setIsSending(true);
+
+    // Use EmailJS to send email
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      subject: subject,
+      message: message,
+    };
+
+    emailjs
+      .send('service_koyf2os', 'template_j78kxdg', templateParams, 'RsKXRIAwYmI9hqnxk') // Use your EmailJS IDs here
+      .then(() => {
+        alert('Message sent successfully!');
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+        alert('There was an error sending the message. Please try again.');
+      })
+      .finally(() => {
+        setIsSending(false); // Hide loading state
+      });
   };
 
   return (
@@ -73,7 +98,9 @@ function Form() {
           required
         />
 
-        <button type="submit">Send!</button>
+        <button type="submit" disabled={isSending}>
+          {isSending ? 'Sending...' : 'Send!'}
+        </button>
       </form>
     </div>
   );

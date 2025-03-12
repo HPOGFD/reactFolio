@@ -3,40 +3,67 @@ import "../css/projects.css";
 
 const projects = [
   {
-    title: "sunChaser",
+    title: "JobSearch API",
     description:
-      "User-friendly application designed to help individuals stay on top of the weather efficiently.",
+      "🚀 A full-stack job search platform built with React, TypeScript, GraphQL, and MongoDB. Search, save, and track job applications with ease! 🔍💼",
     image: "/images/Jobs.gif",
-    link: "https://github.com/HPOGFD/sunChaser.git",
+    link: "https://github.com/HPOGFD/JobSearchAPI.git",
     featured: true,
-    techStack: ["React", "OpenWeather API", "CSS"],
+    techStack: [
+      "Frontend",
+      "⚛️ React with TypeScript",
+      "🔄 Apollo Client for GraphQL integration",
+      "🎨 Bootstrap for responsive styling",
+      "Backend",
+      "🟢 Node.js",
+      "🚂 Express.js",
+      "📊 GraphQL API",
+      "🍃 MongoDB with Mongoose ODM",
+      "🔒 JWT Authentication"
+    ],
   },
   {
-    title: "teamDepo",
+    title: "BookSearch API",
     description:
-      "A command-line application for managing employee data, including departments, roles, and employees.",
-    image: "/images/Jobs.gif",
+      "Google Books GraphQL App 📚 A full-stack MERN application integrating Google Books API with GraphQL and MongoDB. Users can search, save, and manage books in their profiles with secure JWT authentication. 🚀",
+    image: "/images/books.gif",
     link: "https://github.com/HPOGFD/teamDepo.git",
     featured: false,
-    techStack: ["Node.js", "Inquirer", "MySQL"],
+    techStack: [
+      "Frontend",
+      "⚛️ React with TypeScript",
+      "🔄 Apollo Client for GraphQL integration",
+      "🎨 Bootstrap for responsive styling",
+      "Backend",
+      "🟢 Node.js",
+      "🚂 Express.js",
+      "📊 GraphQL API",
+      "🍃 MongoDB with Mongoose ODM",
+      "🔒 JWT Authentication"
+    ],
   },
   {
-    title: "whipBuilder",
+    title: "Social Network API",
     description:
-      "A modular OOP project for building and customizing vehicles with components like color and wheels.",
-    image: "/images/Jobs.gif",
+      "A social network API built using Express.js, MongoDB, Mongoose, and TypeScript. It provides features for users to create and interact with thoughts, reactions, and friend lists. The API supports CRUD operations for thoughts, reactions, and friends, allowing users to connect and share their thoughts in a social network-like environment.",
+    image: "/images/network.gif",
     link: "https://github.com/HPOGFD/whipBuilder.git",
     featured: false,
-    techStack: ["JavaScript", "OOP", "ES6 Classes"],
+    techStack: [ "Backend",
+      "🟢 Node.js",
+      "🚂 Express.js",
+      "📊 GraphQL API",
+      "🍃 MongoDB with Mongoose ODM",
+      "🔒 JWT Authentication"],
   },
   {
-    title: "budgetApp",
+    title: "Weather App API",
     description:
-      "Easy form to input salary and expenses with a user-friendly calculator.",
-    image: "/images/Jobs.gif",
+      "Get 5-day forecasts, track search history, and plan ahead with Node.js, Express, and TypeScript.",
+    image: "/images/weather.gif",
     link: "https://github.com/HPOGFD/BudgetApp.git",
     featured: false,
-    techStack: ["HTML", "CSS", "JavaScript"],
+    techStack: ["HTML", "CSS", "JavaScript", "TypeScript", "Node.js", "Express.js"],
   },
 ];
 
@@ -63,9 +90,14 @@ export default function Projects() {
               <span key={index} className="tech-badge">{tech}</span>
             ))}
           </div>
-          <a href={featuredProject.link} target="_blank" rel="noopener noreferrer" className="project-button">
-            Learn More
-          </a>
+          <a href={featuredProject.link} target="_blank" rel="noopener noreferrer" className="project-button learn-more">
+  Learn More
+</a>
+<br />
+<a href={featuredProject.link} target="_blank" rel="noopener noreferrer" className="project-button live-demo">
+  Live Demo
+</a>
+
         </div>
       )}
 
