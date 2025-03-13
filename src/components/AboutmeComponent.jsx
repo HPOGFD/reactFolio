@@ -8,7 +8,7 @@ const AboutmeComponent = () => {
       <div className="about-overlay"></div>
       
       <div className="about-content">
-        <h3 className="about-title">About Me</h3>
+    
         <p>
   Hi there! My name is <strong>Harry Oyarvide</strong>, a sales application engineer with a passion for back-end development and AWS cloud computing. 
   My background in electrical engineering, combined with growing skills in JavaScript, Node, SQL, NoSQL, PostgreSQL, React, and MongoDB, and APIs, fuels my love for problem-solving. 

@@ -1,21 +1,26 @@
 import React from 'react';
 import AboutmeComponent from '../components/AboutmeComponent';
-import styled from 'styled-components';
 
-// Styled components for the page
-const AboutmeSection = styled.section`
-  padding: 0px;
-  min-height: 60vh;
-  color: black;
-`;
+import { Container, Card } from 'react-bootstrap';
+
 
 const AboutmePage = () => {
   console.log('AboutmePage is running'); // For debugging
 
   return (
-    <AboutmeSection>
-      <AboutmeComponent />
-    </AboutmeSection>
+    <Container className="py-5">
+        <Card className="bg-dark text-white border-danger mb-5">
+          <Card.Header className="bg-danger text-white">
+            <h2 className="mb-0">About me</h2>
+          </Card.Header>
+          <Card.Body>
+            <p className="lead">
+            Get in touch and let&apos;s create someting amazing
+            </p>
+          </Card.Body>
+        </Card>
+        <AboutmeComponent />
+      </Container>
   );
 };
 

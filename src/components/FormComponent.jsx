@@ -51,7 +51,6 @@ function Form() {
 
   return (
     <div className="form-container">
-      <h1 className="form-title">Contact Me</h1>
 
       {/* Contact Details */}
       <div className="contact-details">

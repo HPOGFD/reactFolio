@@ -1,19 +1,17 @@
-/* src/styles/resume.css */
-
 .resume-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px;
-    background-color: #f4f4f4;
+    background-color: #222; /* Darker background */
   }
   
   .resume-card {
     max-width: 800px;
-    background: #fff;
+    background: #333; /* Dark card background */
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   }
   
   .resume-header {
@@ -28,7 +26,7 @@
   .resume-header h1 {
     margin: 0;
     font-size: 28px;
-    color: #333;
+    color: white; /* White text */
   }
   
   .resume-button {
@@ -50,9 +48,9 @@
   
   .resume-section h2 {
     font-size: 22px;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #555; /* Darker border */
     padding-bottom: 5px;
-    color: #444;
+    color: white; /* White text */
   }
   
   .resume-section ul {
@@ -63,10 +61,26 @@
   .resume-section ul li {
     margin-bottom: 8px;
     font-size: 16px;
-    color: #666;
+    color: #ccc; /* Light gray text */
   }
   
   .resume-section ul li strong {
-    color: #222;
+    color: white; /* White text for strong elements */
   }
   
+  .resume-section p {
+    margin-top: 10px;
+    line-height: 1.6;
+    color: #ccc; /* Light gray text */
+    font-size: 16px;
+  }
+  
+  /* Additional styling for links in the dark theme */
+  .resume-section a {
+    color: #4a9eff; /* Bright blue for links */
+    text-decoration: none;
+  }
+  
+  .resume-section a:hover {
+    text-decoration: underline;
+  }

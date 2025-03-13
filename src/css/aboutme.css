@@ -17,6 +17,8 @@
     overflow: hidden;
     transition: background-color 1s ease;
     text-align: center; /* Center the text horizontally */
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+
 }
 
 /* Darker Overlay for Better Contrast */

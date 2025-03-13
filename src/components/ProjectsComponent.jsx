@@ -74,10 +74,7 @@ export default function Projects() {
   return (
     <div className="projects-container">
       {/* Header */}
-      <div className="projects-header">
-        <h2>My Projects</h2>
-        <p>Check out some of the projects I’ve built—showcasing my skills in development and problem-solving!</p>
-      </div>
+    
 
       {/* Featured Project */}
       {featuredProject && (

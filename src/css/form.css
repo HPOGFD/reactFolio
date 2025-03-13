@@ -7,16 +7,10 @@
     color: white;
     border: none; /* Removed red border */
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
     text-align: center;
 }
 
-/* Form Title */
-.form-title {
-    font-size: 24px;
-    color: white;
-    margin-bottom: 20px;
-}
 
 /* Contact Details */
 .contact-details {
@@ -57,7 +51,7 @@
 
 /* Send Button */
 .contact-form button {
-    background-color: red;
+    background-color: blue;
     color: white;
     border: none;
     padding: 10px;
@@ -68,7 +62,7 @@
 }
 
 .contact-form button:hover {
-    background-color: darkred;
+    background-color: green;
 }
 
 /* Responsive */
