@@ -15,7 +15,7 @@ const AboutmePage = () => {
           </Card.Header>
           <Card.Body>
             <p className="lead">
-            Get in touch and let&apos;s create someting amazing
+            Get to know me better! 
             </p>
           </Card.Body>
         </Card>

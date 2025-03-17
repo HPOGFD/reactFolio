@@ -20,7 +20,10 @@ const ResumeComponent = () => {
         <section className="resume-section">
           <h2>Professional Summary</h2>
           <p>
-            Full Stack Software Developer transitioning from industrial automation, skilled at creating customized technical solutions that address business needs. Experienced in collaborating with team members to deliver efficient workflows and ensure seamless product integration. Adept at combining technical expertise with customer-facing support, with hands-on experience in MERN development, API fetching, and cloud computing (AWS). Passionate about using engineering problem-solving skills to build impactful, dynamic, and data-driven applications.
+            Full Stack Software Developer transitioning from industrial automation, skilled at creating customized technical solutions that address business needs. 
+            Experienced in collaborating with team members to deliver efficient workflows and ensure seamless product integration. 
+            Adept at combining technical expertise with customer-facing support, with hands-on experience in MERN development and API fetching. 
+            Passionate about using engineering problem-solving skills to build impactful, dynamic, and data-driven applications.
           </p>
         </section>
 
@@ -31,7 +34,7 @@ const ResumeComponent = () => {
             <li><strong>Web Development Frameworks:</strong> React, Node.js, Express.js</li>
             <li><strong>Enterprise Software Knowledge:</strong> Salesforce, APIs</li>
             <li><strong>Databases:</strong> MySQL, PostgreSQL, NoSQL</li>
-            <li><strong>Tools & Technologies:</strong> AutoCAD, MATLAB, PSPICE, AWS</li>
+            <li><strong>Tools & Technologies:</strong> Git, VS, Postman, Insomnia</li>
             <li><strong>Languages:</strong> English, Spanish</li>
           </ul>
         </section>

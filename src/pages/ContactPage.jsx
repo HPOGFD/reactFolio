@@ -13,7 +13,7 @@ export default function Contact() {
           </Card.Header>
           <Card.Body>
             <p className="lead">
-            Get in touch and let&apos;s create someting amazing
+            Get in touch and let&apos;s create someting amazing!
             </p>
           </Card.Body>
         </Card>
